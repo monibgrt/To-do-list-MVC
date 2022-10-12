@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74a98ec54f.js" crossorigin="anonymous"></script>
+    <title>Listy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="todo-main-container">
+        <h1 class="todo-header">All tasks</h1>
+        <ul class="items-list">
+        <% todos.forEach( el => { %>
+            <li class='todoItem' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='fa fa-trash'></span>
+            </li>
+        <% }) %>    
+        </ul>
+        <div class="left-and-add">
+            <form action="/todos/createTodo" method='POST'>
+                <input type="text" placeholder="Enter Task.." name='todoItem'>
+                <input type="submit">
+            </form>
+            <h2 class="left-to-do">Things left to do: <%= left %></h2>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

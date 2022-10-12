@@ -1,0 +1,91 @@
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: none;
+}
+.main-logo-font{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main-header{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    color: #fff;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: .5rem;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main-container{
+    margin: auto;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 230px;
+    background-color: #313741;
+}
+.text{
+    height: 35px;
+    color: #fff;
+}
+.add{
+    color: #808080;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.todo-main-container{
+    margin: auto;
+    height: 270px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 260px;
+    background-color: #313741;
+    position: relative;
+}
+
+/*** TO DO EJS ***/
+.todo-header{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.left-to-do{
+    color: #fff;
+    font-size: 10px;
+}
+.items-list{
+    color: #fff;
+    list-style: none;
+
+}
+.left-and-add{
+    position: absolute;
+    width: 260px;
+    bottom: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.fa{
+    color: red;
+    padding-left: 5px;
+}
